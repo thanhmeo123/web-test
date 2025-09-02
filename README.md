@@ -1,12 +1,73 @@
-# React + Vite
+📝 Blog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ứng dụng blog đơn giản cho phép người dùng đăng ký, đăng nhập, tạo bài viết, bình luận và quản lý nội dung cá nhân.
 
-Currently, two official plugins are available:
+🚀 Cài đặt & chạy project
+Yêu cầu
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Node.js >= 18
 
-## Expanding the ESLint configuration
+npm hoặc yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cài đặt
+
+# clone repo
+
+git clone https://github.com/your-username/blog-app.git
+cd blog-app
+
+# cài dependencies
+
+npm install
+
+Chạy development
+npm run dev
+
+Ứng dụng sẽ chạy tại http://localhost:5173 (Vite).
+
+Build production
+npm run build
+npm run preview
+
+Chạy test
+npm run test
+
+✨ Tính năng chính
+
+👤 Xác thực người dùng: đăng ký, đăng nhập, lưu session.
+
+📝 Bài viết: thêm, sửa, xóa, xem chi tiết.
+
+💬 Bình luận: thêm bình luận vào bài viết.
+
+🔒 Phân quyền: chỉ tác giả mới được sửa / xóa bài viết hoặc bình luận của mình.
+
+🎨 UI/UX hiện đại: responsive, dễ sử dụng.
+
+📂 LocalStorage (hoặc API thật nếu cấu hình).
+
+🔑 Luồng xác thực
+
+Người dùng đăng ký → thông tin được lưu.
+
+Khi đăng nhập thành công → lưu user vào localStorage (hoặc nhận JWT token từ API).
+
+Các route yêu cầu đăng nhập (/create-post, /profile) sẽ kiểm tra currentUser.
+
+Khi đăng xuất → xóa thông tin khỏi localStorage.
+
+🌍 Demo
+
+👉 Xem bản demo tại đây
+
+🛠️ Công nghệ sử dụng
+
+React + Vite
+
+React Router v6
+
+TailwindCSS (UI)
+
+Vitest + React Testing Library (test)
+
+React Query (tùy chọn, nếu kết nối API)
