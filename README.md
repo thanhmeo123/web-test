@@ -25,6 +25,12 @@ npm run dev
 
 Ứng dụng sẽ chạy tại http://localhost:5173 (Vite).
 
+// test
+thanhngu123@gmail.com (dành cho đăng kí)
+thanhngu123
+123456789Tt!
+Nhập Mã CAPTCHA
+
 Build production
 npm run build
 npm run preview
