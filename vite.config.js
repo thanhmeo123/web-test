@@ -10,4 +10,5 @@ export default defineConfig({
     environment: "jsdom", // ✅ Cần cho test React
     setupFiles: "./src/setupTests.js", // file setup nếu có
   },
+  base : '/web-test'
 })
